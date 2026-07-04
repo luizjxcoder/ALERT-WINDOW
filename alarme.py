@@ -8,7 +8,16 @@ import time
 import winsound
 from tkcalendar import DateEntry
 
-ARQUIVO = "alarmes.json"
+APP_NAME = "Alertas"
+
+BASE_DIR = os.path.join(
+    os.getenv("LOCALAPPDATA"),
+    APP_NAME
+)
+
+os.makedirs(BASE_DIR, exist_ok=True)
+
+ARQUIVO = os.path.join(BASE_DIR, "alarmes.json")
 
 
 class GerenciadorAlarmes:
