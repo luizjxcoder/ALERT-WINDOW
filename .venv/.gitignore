@@ -1,2 +1,14 @@
-* alarmes.json
-*.venv
+# ambiente virtual
+.venv/
+
+# banco json (se ainda usar)
+alarmes.json
+
+# cache python
+__pycache__/
+*.pyc
+
+# build executável
+dist/
+build/
+*.spec
