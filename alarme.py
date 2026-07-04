@@ -73,8 +73,9 @@ class GerenciadorAlarmes:
             text="Título",
             bg="#262626",
             fg="white",
-            font=("Segoe UI", 10)
-        ).grid(row=0, column=0, padx=5)
+            font=("Segoe UI", 10),
+            anchor="w"
+        ).grid(row=0, column=0, padx=(0, 10), pady=(0, 8), sticky="w")
 
         self.entry_titulo = tk.Entry(
             frame,
@@ -85,15 +86,18 @@ class GerenciadorAlarmes:
         self.entry_titulo.grid(
             row=0,
             column=1,
-            padx=5
+            padx=(0, 20),
+            pady=(0, 8),
+            sticky="ew"
         )
 
         tk.Label(
             frame,
             text="Data",
             bg="#262626",
-            fg="white"
-        ).grid(row=1, column=0)
+            fg="white",
+            anchor="w"
+        ).grid(row=1, column=0, padx=(0, 10), sticky="w")
 
         self.calendario = DateEntry(
             frame,
@@ -104,6 +108,7 @@ class GerenciadorAlarmes:
         self.calendario.grid(
             row=1,
             column=1,
+            padx=(0, 20),
             sticky="w"
         )
 
@@ -111,8 +116,9 @@ class GerenciadorAlarmes:
             frame,
             text="Hora",
             bg="#262626",
-            fg="white"
-        ).grid(row=1, column=2, padx=(20, 5))
+            fg="white",
+            anchor="w"
+        ).grid(row=1, column=2, padx=(20, 8), sticky="w")
 
         self.entry_hora = tk.Entry(
             frame,
@@ -121,7 +127,8 @@ class GerenciadorAlarmes:
 
         self.entry_hora.grid(
             row=1,
-            column=3
+            column=3,
+            sticky="w"
         )
 
         # BOTÕES HORIZONTAIS
