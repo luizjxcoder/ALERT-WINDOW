@@ -16,7 +16,7 @@ class GerenciadorAlarmes:
     def __init__(self, root):
 
         self.root = root
-        self.root.title("Alarmes RM4")
+        self.root.title("Meus Alertas")
         self.root.geometry("720x600")
         self.root.configure(bg="#1e1e1e")
 
@@ -36,7 +36,7 @@ class GerenciadorAlarmes:
 
         titulo = tk.Label(
             self.root,
-            text="⏰ GERENCIADOR DE ALARMES RM4",
+            text="⏰ GERENCIADOR DE ALARMES",
             bg="#171717",
             fg="white",
             font=("Segoe UI", 20, "bold")
@@ -503,7 +503,7 @@ class GerenciadorAlarmes:
 
         alerta = tk.Toplevel(self.root)
 
-        alerta.title("ALARME RM4")
+        alerta.title("ALERTA")
         alerta.configure(bg="#cc0000")
         alerta.resizable(False, False)
 
@@ -531,7 +531,7 @@ class GerenciadorAlarmes:
 
         lbl_titulo = tk.Label(
             frame_alerta,
-            text="🚨 ALARME RM4 🚨",
+            text="🚨 ALERTA 🚨",
             bg="#cc0000",
             fg="white",
             font=("Segoe UI", 28, "bold")
