@@ -1,5 +1,5 @@
 # ambiente virtual
-.venv
+.venv/
 
 # banco json (se ainda usar)
 alarmes.json
