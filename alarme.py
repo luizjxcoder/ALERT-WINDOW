@@ -124,107 +124,107 @@ class GerenciadorAlarmes:
             column=3
         )
 
-    # BOTÕES HORIZONTAIS
+        # BOTÕES HORIZONTAIS
 
-    frame_botoes = tk.Frame(
-        self.root,
-        bg="#171717"
-    )
+        frame_botoes = tk.Frame(
+            self.root,
+            bg="#171717"
+        )
 
-    frame_botoes.pack(
-        fill="x",
-        padx=15,
-        pady=5
-    )
+        frame_botoes.pack(
+            fill="x",
+            padx=15,
+            pady=5
+        )
 
-    self.btn_adicionar = tk.Button(
-        frame_botoes,
-        text="➕ Adicionar",
-        bg="#16a34a",
-        fg="white",
-        bd=0,
-        font=("Segoe UI", 11, "bold"),
-        padx=15,
-        pady=8,
-        command=self.adicionar_alarme
-    )
+        self.btn_adicionar = tk.Button(
+            frame_botoes,
+            text="➕ Adicionar",
+            bg="#16a34a",
+            fg="white",
+            bd=0,
+            font=("Segoe UI", 11, "bold"),
+            padx=15,
+            pady=8,
+            command=self.adicionar_alarme
+        )
 
-    self.btn_adicionar.pack(
-        side="left",
-        padx=4
-    )
+        self.btn_adicionar.pack(
+            side="left",
+            padx=4
+        )
 
-    self.btn_editar = tk.Button(
-        frame_botoes,
-        text="✏ Editar",
-        bg="#2563eb",
-        fg="white",
-        bd=0,
-        font=("Segoe UI", 11, "bold"),
-        padx=15,
-        pady=8,
-        command=self.editar_alarme
-    )
+        self.btn_editar = tk.Button(
+            frame_botoes,
+            text="✏ Editar",
+            bg="#2563eb",
+            fg="white",
+            bd=0,
+            font=("Segoe UI", 11, "bold"),
+            padx=15,
+            pady=8,
+            command=self.editar_alarme
+        )
 
-    self.btn_editar.pack(
-        side="left",
-        padx=4
-    )
+        self.btn_editar.pack(
+            side="left",
+            padx=4
+        )
 
-    self.btn_salvar = tk.Button(
-        frame_botoes,
-        text="💾 Salvar",
-        bg="#f59e0b",
-        fg="black",
-        bd=0,
-        font=("Segoe UI", 11, "bold"),
-        padx=15,
-        pady=8,
-        command=self.salvar_edicao
-    )
+        self.btn_salvar = tk.Button(
+            frame_botoes,
+            text="💾 Salvar",
+            bg="#f59e0b",
+            fg="black",
+            bd=0,
+            font=("Segoe UI", 11, "bold"),
+            padx=15,
+            pady=8,
+            command=self.salvar_edicao
+        )
 
-    self.btn_salvar.pack(
-        side="left",
-        padx=4
-    )
+        self.btn_salvar.pack(
+            side="left",
+            padx=4
+        )
 
-    self.btn_excluir = tk.Button(
-        frame_botoes,
-        text="🗑 Excluir",
-        bg="#dc2626",
-        fg="white",
-        bd=0,
-        font=("Segoe UI", 11, "bold"),
-        padx=15,
-        pady=8,
-        command=self.excluir_alarme
-    )
+        self.btn_excluir = tk.Button(
+            frame_botoes,
+            text="🗑 Excluir",
+            bg="#dc2626",
+            fg="white",
+            bd=0,
+            font=("Segoe UI", 11, "bold"),
+            padx=15,
+            pady=8,
+            command=self.excluir_alarme
+        )
 
-    self.btn_excluir.pack(
-        side="left",
-        padx=4
-    )
+        self.btn_excluir.pack(
+            side="left",
+            padx=4
+        )
 
-    # LISTA DE ALARMES
+        # LISTA DE ALARMES
 
-    self.lista = tk.Listbox(
-        self.root,
-        bg="#262626",
-        fg="white",
-        selectbackground="#2563eb",
-        selectforeground="white",
-        font=("Segoe UI", 11),
-        bd=0,
-        highlightthickness=0,
-        height=15
-    )
+        self.lista = tk.Listbox(
+            self.root,
+            bg="#262626",
+            fg="white",
+            selectbackground="#2563eb",
+            selectforeground="white",
+            font=("Segoe UI", 11),
+            bd=0,
+            highlightthickness=0,
+            height=15
+        )
 
-    self.lista.pack(
-        fill="both",
-        expand=True,
-        padx=15,
-        pady=10
-    )
+        self.lista.pack(
+            fill="both",
+            expand=True,
+            padx=15,
+            pady=10
+        )
 
     def atualizar_relogio(self):
 
